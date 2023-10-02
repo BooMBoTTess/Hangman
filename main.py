@@ -9,7 +9,6 @@ class game:
         with open('words.txt', 'r', encoding='utf-8') as f:
             self.word = random.choice(open('words.txt').readlines()).rstrip()
             self.visible = "_" * len(self.word)
-        print(self.word)
     def open_letter(self, pos, letter):
         self.visible = self.visible[:pos] + letter + self.visible[pos+1:]
 
